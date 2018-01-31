@@ -6,11 +6,11 @@ def reformat_languages(languages)
         if new_hash[language].nil?
           new_hash[language] = {}
         end
-        language_attributes[language][:style] ||= [] 
-        language_attributes[language][:style] << oo_or_functional                              
-        if language_attributes[language][attribute].nil?
+        new_hash[language][:style] ||= [] 
+        new_hash[language][:style] << oo_or_functional                              
+        if new_hash[language][attribute].nil?
 
-          language_attributes[language][attribute] = str_value  
+          new_hash[language][attribute] = str_value  
         end
       end
     end
